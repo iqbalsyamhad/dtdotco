@@ -70,23 +70,23 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="w3_navigation_pos">
-                        <a href="<?php echo base_url()?>">
-                            <img width="42%"; src="<?php echo base_url()?>asset/odyssey/images/logo-dt.png" alt="dreamtour, dreamtour jakarta, travel umroh terbaik">
+                        <span><a href="<?php echo base_url()?>">
+                            <img  src="<?php echo base_url()?>asset/odyssey/images/logo_panjang.png" alt="dreamtour, dreamtour jakarta, travel umroh terbaik, travel umroh terpercaya, ttavel umroh rekomendasi kemenag">
                             
-                        </a>
+                        </a></span>
                     </div>
                 </div>
 
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse navbar-right " id="bs-example-navbar-collapse-1">
                     <nav class="link-effect-2" id="link-effect-2">
-                        <ul class="nav navbar-nav">
-                            <li><a class="" href="<?php echo base_url()?>"><span>Home</span></a></li>
-                            <li><a class="" href="<?php echo base_url()?>web/produk"><span>Produk</span></a></li>
-                            <li><a class="" href="<?php echo base_url()?>umroh"><span>Umroh</span></a></li>
-                            <li><a class="" href="<?php echo base_url()?>tour/wisata_tour"><span>Liburan</span></a></li>
-                            <li><a target="_blank" class="" href="<?php echo base_url()?>sohibi"><span>Sohibi</span></a></li>
-                            <li><a class="" href="<?php echo base_url()?>web/contact"><span>Kontak Kami</span></a></li>
-                        </ul>
+                    <ul class="nav navbar-nav">
+                            <li ><a  href="<?php echo base_url()?>"><span>Home</span></a></li>
+                            <li><a href="<?php echo base_url()?>hajj"><span>Haji</span></a></li>
+                            <li><a id="umroh" href="<?php echo base_url()?>umroh"><span>Umroh</span></a></li>
+                            <li><a href="<?php echo base_url()?>web/produk"><span>Produk</span></a></li>
+                            <li><a href="<?php echo base_url()?>tour/wisata_tour"><span>Liburan</span></a></li>
+                            <li><a href="<?php echo base_url()?>web/contact"><span>Kontak Kami</span></a></li>
+                    </ul>   
                     </nav>
                 </div>
             </nav>

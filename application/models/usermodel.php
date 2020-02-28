@@ -2824,4 +2824,29 @@ AND u.user_id = h.user_id and kloter=11');
 						return $query->result();
 					}
 
+
+
+
+
+
+					function ambilData($tablename="",$listfield="",$where="")
+					{
+						$query=null;
+						if (empty($listfield)) {
+							if (empty($where)) {
+								$query = $this->db->query("select * from ".$tablename);
+							} else {
+								$query = $this->db->query("select * from ".$tablename." where ".$where);
+							}
+						} else {
+							if (empty($where)) {
+								$query = $this->db->query("select ".$listfield." from ".$tablename);
+							} else {
+								$query = $this->db->query("select ".$listfield." from ".$tablename." where ".$where);
+							}
+						}
+				
+						return $query->result();
+					}
+
 }

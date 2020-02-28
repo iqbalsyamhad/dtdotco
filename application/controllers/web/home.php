@@ -10,7 +10,8 @@ class Home extends CI_Controller
 
 	public function index()
 	{
-     	$this->load->view('web/odyssey/home');
+		$data['slider'] = $this->Usermodel->ambilData('ol_paketumroh');
+     	$this->load->view('web/odyssey/home',$data);
 	}
 
 

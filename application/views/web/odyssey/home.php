@@ -70,23 +70,23 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="w3_navigation_pos">
-                        <a href="<?php echo base_url()?>">
-                            <img width="42%"; src="<?php echo base_url()?>asset/odyssey/images/logo-dt.png" alt="dreamtour, dreamtour jakarta, travel umroh terbaik, travel umroh terpercaya, ttavel umroh rekomendasi kemenag">
+                        <span><a href="<?php echo base_url()?>">
+                            <img  src="<?php echo base_url()?>asset/odyssey/images/logo_panjang.png" alt="dreamtour, dreamtour jakarta, travel umroh terbaik, travel umroh terpercaya, travel umroh rekomendasi kemenag">
                             
-                        </a>
+                        </a></span>
                     </div>
                 </div>
 
                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                     <nav class="link-effect-2" id="link-effect-2">
-                        <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav">
                             <li><a href="<?php echo base_url()?>"><span>Home</span></a></li>
+                            <li><a href="<?php echo base_url()?>hajj"><span>Haji</span></a></li>
+                            <li><a id="umroh" href="<?php echo base_url()?>umroh"><span>Umroh</span></a></li>
                             <li><a href="<?php echo base_url()?>web/produk"><span>Produk</span></a></li>
-                            <li><a href="<?php echo base_url()?>umroh"><span>Umroh</span></a></li>
                             <li><a href="<?php echo base_url()?>tour/wisata_tour"><span>Liburan</span></a></li>
-                            <li><a target="_blank" href="<?php echo base_url()?>sohibi"><span>Sohibi</span></a></li>
                             <li><a href="<?php echo base_url()?>web/contact"><span>Kontak Kami</span></a></li>
-                        </ul>
+                    </ul>
                     </nav>
                 </div>
             </nav>
@@ -98,134 +98,20 @@
 
         <!-- Slider -->
         <div class="slider">
-            <ul class="rslides" id="slider">
-                <li class="third-slide w3-agileits">
-                    <img src="<?php echo base_url()?>asset/images/slider/LANDSCAPE copy.jpg" alt="umroh promo 2019, umroh september,Umroh VIP, umroh promo, umroh septmber, umroh murah, umroh hemat ,umroh syawal, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, travel umroh bandung">
+           <ul class="rslides" id="slider">
+           <?php foreach($slider as $r){ ?>
+                <li class="third-slide w3-agileits">                  
+                    <img src="<?php echo base_url()?>asset/images/slider/<?php echo $r->imgpaketumroh?>" alt="umroh promo 2020, umroh september,Umroh VIP, umroh promo, umroh septmber, umroh murah, umroh hemat ,umroh syawal, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, travel umroh bandung">
                     <div class="wthreexperience">
                         <div id="animated-example2" class="animated fadeIn"></div>
                         <button onclick="myFunction()">Reload page</button>
                     </div>
-                </li>
-                
-                <li class="third-slide w3-agileits">
-                    <img src="<?php echo base_url()?>asset/images/slider/ANNOUNCEMENT.jpg" alt="umroh promo 2019, umroh september,Umroh VIP, umroh promo, umroh septmber, umroh murah, umroh hemat ,umroh syawal, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example2" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                <li class="third-slide w3-agileits">
-                    <img src="<?php echo base_url()?>asset/images/slider/EXCLUSIVE.jpg" alt="umroh promo 2019, umroh september,Umroh VIP, umroh promo, umroh septmber, umroh murah, umroh hemat ,umroh syawal, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example2" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                 <li class="third-slide w3-agileits">
-                    <img src="<?php echo base_url()?>asset/images/slider/umroh-signature-dream-tour.jpg" alt="umroh plus taif,Umroh VIP, umroh promo, umroh septmber, umroh murah, umroh hemat ,umroh syawal, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example2" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                <li class="third-slide w3-agileits">
-                    <img src="<?php echo base_url()?>asset/images/slider/DREAMTOUR-PAKET-UMROH-SIGNATURE-SV.jpg" alt="umroh plus taif,Umroh VIP, umroh promo, umroh septmber, umroh murah, umroh hemat ,umroh syawal, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example2" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
+                </li> 
+            
                 
                 
-                <li class="third-slide w3-agileits">
-                    <img src="<?php echo base_url()?>asset/images/slider/DREAM-SIGNATURE-HIGH-SEASON-SV.jpg" alt="Umroh VIP, umroh promo, umroh septmber, umroh murah, umroh hemat ,umroh syawal, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example2" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                
-                <li class="third-slide w3-agileits">
-                    <img src="<?php echo base_url()?>asset/images/slider/DREAM-SIGNATURE-HIGH-SEASON-GA.jpg" alt="Umroh VIP, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example2" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                
-                
-                <li class="first-slide w3ls">
-                    <img src="<?php echo base_url()?>asset/images/slider/DREAM-SIGNATURE-PRIORITY-SV.jpg" alt="Umroh VIP, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                
-                
-                <li class="first-slide w3ls">
-                    <img src="<?php echo base_url()?>asset/images/slider/umroh-plus-aqso.jpg" alt="Umroh VIP, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, umroh akhir tahun 2019, travel umroh bandung. ">
-                    <div class="wthreexperience">
-                        <div id="animated-example" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                <li class="first-slide w3ls">
-                    <img src="<?php echo base_url()?>asset/images/slider/DREAM-PLUS-DUBAI.jpg" alt="Umroh VIP, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, paket umroh akhir tahun 2019, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-              
-                <li class="first-slide w3ls">
-                    <img src="<?php echo base_url()?>asset/images/slider/DREAM-UMROH-PLUS-EROPA.jpg" alt="Umroh VIP, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, umroh plus aqsa, umroh plus palestina, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                <li class="first-slide w3ls">
-                    <img src="<?php echo base_url()?>asset/images/slider/DREAM-PLUS-TAIF.jpg" alt="Umroh VIP, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta,  umroh plus turki, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                <li class="first-slide w3ls">
-                    <img src="<?php echo base_url()?>asset/images/slider/DREAM-PLUS-TURKEY-REGULAR.jpg" alt="Umroh VIP, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh jakarta, umroh plus eropa, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                <li class="first-slide w3ls">
-                    <img src="<?php echo base_url()?>asset/images/slider/cbgbdg.jpg" alt="Bandung, Umroh Bandung, Dream Tour Bandung, dreamtour, paket umroh, travel umroh terbaik, travel umroh terpercaya, travel umroh bandung, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example2" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-                <li class="first-slide w3ls">
-                    <img src="<?php echo base_url()?>asset/images/slider/DREAM PEKANBARU.jpg" alt="pekanbaru, Umroh pekanbaru, Dream Tour pekanbaru, dreamtour, paket umroh pekanbaru, travel umroh terbaik pekanbaru, travel umroh terpercaya pekanbaru, travel umroh pekanbaru, travel umroh bandung">
-                    <div class="wthreexperience">
-                        <div id="animated-example2" class="animated fadeIn"></div>
-                        <button onclick="myFunction()">Reload page</button>
-                    </div>
-                </li>
-                
-            </ul>
+             <?php }?> 
+           </ul>    
         </div>
         <!-- //Slider -->
 
